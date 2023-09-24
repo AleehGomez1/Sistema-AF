@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ‘Poppins’, sans-serif;
+  }
+   html{
+    background: url(FA_Imagenes_Login/Campo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+   
+   }
+  body{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .content{
+    width: 330px;
+    background-color: #03030398;
+    border-radius: 10px;
+    padding: 40px 30px;
+    margin-top: 100px;
+    box-shadow: -2px -2px 8px #949292a2,
+                3px 3px 7px rgba(168, 165, 165, 0.671);
+    
+  }
+  
+  
+  .content .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: #fcf8f8fd;
+  }
+  
+  .content .field{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  /* Estilo de las letras que se ingresan en los campos */
+  .field input{
+    height: 100%;
+    width: 100%;
+    padding-left: 45px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    border: 1px solid rgba(10, 10, 10, 0.438);
+    border-radius: 8px;
+    background: rgba(105, 105, 105, 0.301);
+   
+  }
+  
+  
+  .field input::placeholder{
+    color: #faf2f2;
+  }
+  .field:nth-child(2){
+    margin-top: 20px;
+  }
+  
+  .field span{
+    position: absolute;
+    width: 50px;
+    line-height: 50px;
+    color: #ffffff;
+  }
+  
+  
+  
+  button{
+    margin: 25px 0 0 0;
+    width: 100%;
+    height: 50px;
+    color: rgb(238, 226, 226);
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid rgba(10, 10, 10, 0.438);
+    border-radius: 8px;
+    background: rgba(97, 224, 241, 0.541);
+   margin-top: 40px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+   
+  }
+
+  #remember-container{
+  position: relative;
+  margin: 25px 0 0 0;
+}
+/* Cajita de texto */
+.checkbox {
+  position: relative;
+  cursor: pointer;
+	-webkit-appearance: none;
+	padding: 5px;
+	border-radius: 4px;  
+  background: rgb(231, 224, 224);
+	display: inline-block;
+  width: 16px;
+  height: 15px;
+  top: 8px;
+	left: -127px;
+}
+
+.checkbox:checked:active {
+    
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.checkbox:checked {
+  background: rgba(255, 255, 255, 0.993);
+  top: 8px;
+	left: -127px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgb(255, 255, 255);
+	color: #fff;
+}
+
+/* Flechita Cajita de Texto */
+.checkbox:checked:after {
+	content: '\2714';
+	font-size: -10px;
+    font-weight: 600;
+	position: relative;
+	top: -7px;
+	left: -2px;
+	color: #62e8fa;
+}
+
+/* Texto Recuerdame */
+#remember{
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Hind', sans-serif;
+  color: rgba(255, 255, 255, 0.993);
+  top: 7px;
+  left: 20px;
+}
+
+#forgotten{
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Hind', sans-serif;
+  color: rgb(255, 253, 253);
+  right: 0px;
+  top: 7px;
+  cursor: pointer;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#forgotten:hover{
+  color: rgba(76, 229, 240, 0.6);
+}
+
+#forgotten-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 260px;
+  height: 180px;
+  border-radius: 10px;
+  background: rgba(3,3,3,0.25);
+  box-shadow: 1px 1px 50px #000;
+  display: none;
+}
+
+.barra-superior {
+    
+  position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    padding: -25px;
+    top: 0px;
+	right: 0px;
+}
+
+.tabla-imagenes {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1cm; /* Separación de 1 cm desde la derecha */
+}
+
+.tabla-imagenes img {
+    width: 80px;
+    height: 70px; /* Tamaño deseado para las imágenes */
+    margin-left: 1cm; /* Espacio de 1 cm entre imágenes */
+}
